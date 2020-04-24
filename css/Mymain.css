@@ -197,6 +197,7 @@ body>.content>#d3>footer {
 		background-color: black;
 		position: absolute;
 		left: 10%;
+		text-align: center;
 	}
 
 	body>#div1>button {
@@ -212,14 +213,13 @@ body>.content>#d3>footer {
 		height: 10px;
 		display: inline;
 		border: solid 1px black;
-		margin: 5px;
+ 		margin: 5px;
 	}
 
 	body>#div1>div>#btnshow {
 		margin: 0;
 		padding: 0;
 		width: 100%;
-		border: solid 1px blue;
 		list-style: none;
 		position: absolute;
 		z-index: 999999;
@@ -228,8 +228,10 @@ body>.content>#d3>footer {
 		display: none;
 	}
 
-	body>#div1>li>span {
+	body>#div1>span {
 		color: red;
+		position: relative;
+		top: 15px;
 	}
 
 	body>#div1>li {
@@ -258,7 +260,7 @@ body>.content>#d3>footer {
 
 	body>.content {
 		width: 80%;
-		height: 850px;
+		height: 1000px;
 		margin: auto;
 		overflow: auto;
 		position: absolute;
@@ -281,15 +283,17 @@ body>.content>#d3>footer {
 		padding: 0;
 	}
 
-	body>.content>aside>span {
-		position: absolute;
-		left: 130px;
-		top: 50px;
+	body>.content>aside>sdiv {
+		text-align: center;
+	}
+	
+	body>.content>aside>div>span{
+		position: relative;
+		top: 15px;
 	}
 
-	body>.content>aside>span>input {
+	body>.content>aside>div>span>input {
 		height: 40px;
-		font-size: 20px;
 	}
 
 	body>.content>#d3>#d5 {
@@ -343,7 +347,6 @@ body>.content>#d3>footer {
 		position: relative;
 		top: -120px;
 		margin: 100px auto;
-		overflow: hidden;
 	}
 
 	#list {
@@ -352,18 +355,25 @@ body>.content>#d3>footer {
 		top: 0;
 		padding: 0;
 		margin: 0;
-		-webkit-animation: 5s move infinite linear;
-		width: 200%;
+		-webkit-animation: 10s move infinite linear;
+		width: 300%;
 	}
 
 	#list li {
 		list-style: none;
 		width: 130px;
 		height: 130px;
-		color: #fff;
+		/* color: #fff; */
 		text-align: center;
 		float: left;
-		font: normal 50px/2.5em '微软雅黑';
+		font: normal 0px/2em '微软雅黑';
+	}
+	
+	body>.content>#wrap>#list>li>img{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
 	}
 
 	#wrap:hover #list {
@@ -374,8 +384,9 @@ body>.content>#d3>footer {
 		margin: 0;
 		padding: 0;
 		width: 100%;
-		height: 500px;
+		height: 700px;
 		position: relative;
+		top: -140px;
 		margin: -95px auto;
 	}
 
@@ -403,6 +414,8 @@ body>.content>#d3>footer {
 
 	body>.content>#d3>footer {
 		width: 100%;
+		position: relative;
+		top: 170px;
 	}
 }
 
